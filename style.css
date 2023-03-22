@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Rubik:wght@300&display=swap');
+* { 
+	font-family: "Rubik", sans-serif;
+}
+
+html {
+	--background: #1a1b26;
+	--foreground: #c0caf5;
+	--accent1:    #73daca;
+	--accent2:    #7dcfff;
+	--accent1-low-opacity:    #14b8a640;
+	--accent2-low-opacity:    #06b6d440;
+	background-color: var( --background );
+	color:            var( --foreground );
+}
+
+body {
+	max-width: 66vw;
+	margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Comfortaa", cursive;
+}
+
+h1 {
+	text-align: center;
+	font-size: 3rem;
+	text-shadow: 
+	0 0 5px var(--accent1),
+	0 0 50px var(--accent2)
+	;
+}
+
+h2 {
+	font-size: 2.5rem;
+}
+
+h3 {
+	font-size: 2rem;
+}
+
+p {
+	width: clamp(45ch,  50%, 75ch);
+	font-size: 1.5rem;
+}
+
+button {
+	width: 6em;
+	height: 3em;
+	background-image: linear-gradient(to right, var(--accent1), var(--accent2));
+	border-radius: 0.5em;
+	border: hidden;
+	box-shadow:
+	0 0 10px var(--accent1-low-opacity),
+	0 0 100px var(--accent2-low-opacity);
+	transition: all 0.25s;
+}
+
+button:hover {
+	box-shadow:
+	0 0 5px var(--accent1),
+	0 0 50px var(--accent2-low-opacity);
+}
+
+button:active {
+	background-image: linear-gradient(to right, var(--accent2), var(--accent1));
+}
+
+a {
+	color: var(--accent1);
+}
