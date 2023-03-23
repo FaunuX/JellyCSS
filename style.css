@@ -46,6 +46,7 @@ p {
 }
 
 button {
+	font-weight: bold;
 	width: 6em;
 	height: 3em;
 	background-image: linear-gradient(to right, var(--accent1), var(--accent2));
@@ -59,8 +60,8 @@ button {
 
 button:hover {
 	box-shadow:
-	0 0 5px var(--accent1),
-	0 0 50px var(--accent2-low-opacity);
+	0 0 2px var(--accent1),
+	0 0 20px var(--accent2-low-opacity);
 }
 
 button:active {
