@@ -70,3 +70,9 @@ button:active {
 a {
 	color: var(--accent1);
 }
+
+.editor {
+	border-radius: 1em;
+	border-style: hidden;
+	width: 100%;
+}
