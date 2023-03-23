@@ -72,8 +72,22 @@ a {
 	color: var(--accent1);
 }
 
+mark {
+	background-color: var(--accent1);
+}
+
 .editor {
 	border-radius: 1em;
 	border-style: hidden;
 	width: 100%;
+}
+.panel {
+	background: var(--accent1-low-opacity);
+	box-shadow: 0 0px 16px 0 var(--accent2-low-opacity);
+	backdrop-filter: blur( 15px );
+	-webkit-backdrop-filter: blur( 15px );
+	border-radius: 10px;
+	border: 1px solid rgba( 255, 255, 255, 0.18 );
+	padding: 2em; 
+	margin: 1em;
 }
